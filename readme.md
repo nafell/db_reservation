@@ -16,7 +16,7 @@ GRANT ALL ON *.* TO 'prisma-reservation'@'localhost';
 
 1. ダウンロード
 ```bash
-git clone https://github.com/nafell/db_reservation
+git clone https://github.com/nafell/db_reservation.git
 ```
 
 2. 依存関係をインストール
@@ -56,7 +56,7 @@ GRANT ALL ON db_reservation.* TO 'prisma-reservation'@'localhost';
 ```
 3. 本ツールのダウンロード
 ```bash
-git clone https://github.com/nafell/db_reservation
+git clone https://github.com/nafell/db_reservation.git
 ```
 4. 依存関係をインストール
 ```bash
