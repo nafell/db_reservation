@@ -1,6 +1,8 @@
-# ■ DB作成
+# 使用手順
 
-## mysqlの設定
+## DB初期化
+
+### mysqlの設定
 mysql上で以下のコマンドを実行
 1. ユーザ作成
 ```sql
@@ -11,7 +13,7 @@ CREATE USER 'prisma-reservation'@'localhost' IDENTIFIED BY 'password12345678';
 GRANT ALL ON *.* TO 'prisma-reservation'@'localhost';
 ```
 
-## 本ツール導入・実行
+### 本ツール導入・実行
 ターミナルで以下のコマンドを実行  
 
 1. ダウンロード
@@ -29,13 +31,13 @@ npm i
 npx prisma migrate dev --name init
 ```
 
-## 後片付け
+### 後片付け
 mysql上で以下のコマンドを実行
 ```sql
 REVOKE ALL ON *.* FROM 'prisma-reservation'@'localhost';
 ```
 
-# ■ Prisma Studio(GUI)の使用
+## Prisma Studio(GUI)の使用
 1. mysql権限設定(初回のみ)
 ```sql
 GRANT ALL ON db_reservation.* TO 'prisma-reservation'@'localhost';
@@ -45,7 +47,7 @@ GRANT ALL ON db_reservation.* TO 'prisma-reservation'@'localhost';
 npx prisma studio
 ```
 
-# ■ すでにDB作成済みの人は
+# ■■ すでにDB作成済みの人向け手順
 1. ユーザ作成
 ```sql
 CREATE USER 'prisma-reservation'@'localhost' IDENTIFIED BY 'password12345678';
